@@ -1,2 +1,2 @@
 # GuiaDeTagsHtml
-Guia
+Repositório para armazenar conteúdo de HTML
