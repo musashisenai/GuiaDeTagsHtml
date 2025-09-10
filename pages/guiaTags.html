@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Guia de Tags HTML</title>
 </head>
 
@@ -177,9 +178,91 @@
         Exibe uma imagem. Precisa do atributo <b>src</b>
         que representa o caminho da imagem. 
     </p>
-    <img src="sesi.png" width="100" height="100">
+    <img src="../img/avatar1.png" width="200" height="200">
     <hr>
 
+    <h2>
+        < input > - Campo de Entrada
+    </h2>
+    <p>
+        Usado para criar diferentes topos de campos de formulário.
+        O tipo é definido pelo atributo <b>type</b>.
+        Exemplos:
+    </p>
+    <input type="text" placeholder="Digite seu nome...">
+    <input type="password" placeholder="Digite sua senha...">
+    <input type="email" placeholder="Digite seu email">
+    <input type="number" placeholder="Digite sua idade">
+    <hr>
+
+    <h2>
+        < textarea > - Área de Texto
+    </h2>
+    <p>
+        Cria uma caixa de texto maior para mensagens ou descrições.
+        Pode ter várias linhas.
+    </p>
+    <textarea rows="4"></textarea>
+    <hr>
+
+    <h2>
+        < label > - Rótulo de Campo
+    </h2>
+    <p>
+        Define um rótulo descritivo para um campo de formulário.
+        O atributo <b>for</b> dever ser igual ao <b>id</b> do 
+        campo correspondente.
+    </p>
+    <label for="usuario">Usuário</label>
+    <input type="text"   id="usuario" name="usuario">
+    <hr>
+
+    <h2>
+        < select > e option > - Caixa de Seleção (combobox)
+    </h2>
+    <p>
+        Usado para criar uma lista suspensa (drop-down).
+        < option > define as opções.
+    </p>
+    <select>
+        <option>SP</option>
+        <option>RJ</option>
+        <option>MS</option>
+
+    </select>
+    <hr>
+
+    <h2>
+        < input type="radio" > - Botões de Opção
+    </h2>
+    <p>
+        Permitem escolher apenas uma opção.
+    </p>
+    <input type="radio" name="opcao" value="V"> Verdadeiro>
+    <input type="radio" name="opcao" value="F"> Falso
+    <hr>
+
+    <h2>
+        < input type="checkbox" > - Cixa de Seleção
+    </h2>
+    <p>
+        Permitem selecionar várias opções ao mesmo tempo.
+    </p>
+    <input type="checkbox" name="interesse" value="html"> HTML
+    <input type="checkbox" name="interesse" value="css"> CSS
+    <input type="checkbox" name="interesse" value="js"> JS
+    <hr>
+
+    <h2>
+        < button > - Botão
+    </h2>
+    <p>
+        Cria um botão clicável. Pode ser usado para enviar
+        formulário ou executar ações com JavaScript.
+    </p>
+    <button>Enviar Dados</button>
+    <hr>
 
 </body>
+
 </html>
